@@ -1,0 +1,186 @@
+{
+	"menus" : [
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-user-plus fa-2x",
+			"link" : "tieupsDashboard",
+			"menuId" : "tp-db",
+			"name" : "Dashboard",
+			"selected" : "true"
+		},
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-user-plus fa-2x",
+			"link" : "tieupsFleetOperatorDashboard",
+			"menuId" : "tp-fo",
+			"name" : "Fleet Operator",
+			"selected" : "true",
+			"subMenus" : [
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "tieupsFleetOperatorRegistration",
+					"menuId" : "tp-fo-fr",
+					"name" : "Registration",
+					"selected" : "true"
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "tieupsFleetOperatorList",
+					"menuId" : "tp-fo-fl",
+					"name" : "List",
+					"selected" : "true"
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "tieupsFleetOperatorDriverRegistration",
+					"menuId" : "tp-fo-dr",
+					"name" : "Driver Registration",
+					"selected" : "true"
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "tieupsFleetOperatorVechicleRegistration",
+					"menuId" : "tp-fo-vr",
+					"name" : "Vechicle Registration",
+					"selected" : "true"
+				}
+			]
+		},
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-user-plus fa-2x",
+			"link" : "tieupsWarehouseDashboard",
+			"menuId" : "tp-wh",
+			"name" : "Warehouse",
+			"selected" : "true",
+			"subMenus" : [
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "tieupsWarehouseRegistration",
+					"menuId" : "tp-wh-fr",
+					"name" : "Registration",
+					"selected" : "true"
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "tieupsWarehouseList",
+					"menuId" : "tp-wh-fl",
+					"name" : "List",
+					"selected" : "true"
+				}
+			]
+		},
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-user-plus fa-2x",
+			"link" : "tieupsFranchiseDashboard",
+			"menuId" : "tp-fr",
+			"name" : "Franchise",
+			"selected" : "true",
+			"subMenus" : [
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "tieupsFranchiseRegistration",
+					"menuId" : "tp-fr-fr",
+					"name" : "Registration",
+					"selected" : "true"
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "tieupsFranchiseList",
+					"menuId" : "tp-fr-fl",
+					"name" : "List",
+					"selected" : "true"
+				}
+			]
+		},
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-user-plus fa-2x",
+			"link" : "tieupsInsuranceDashboard",
+			"menuId" : "tp-is",
+			"name" : "Insurance",
+			"selected" : "true",
+			"subMenus" : [
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "tieupsInsuranceRegistration",
+					"menuId" : "tp-is-fr",
+					"name" : "Registration",
+					"selected" : "true"
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "tieupsInsurancePlanList",
+					"menuId" : "tp-is-pl",
+					"name" : "Plan List",
+					"selected" : "true"
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "tieupsInsuranceList",
+					"menuId" : "tp-is-fl",
+					"name" : "List",
+					"selected" : "true"
+				}
+			]
+		},
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-user-plus fa-2x",
+			"menuId" : "tp-ts",
+			"name" : "Terms and Conditions",
+			"selected" : "true",
+			"subMenus" : [
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "tieupsTermsAndConditionList",
+					"menuId" : "tp-ts-fl",
+					"name" : "List",
+					"selected" : "true"
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "tieupsInsuranceInsuranceCompanyList",
+					"menuId" : "tp-ts-cl",
+					"name" : "Insurance Company",
+					"selected" : "true"
+				}
+			]
+		}
+	],
+	"name" : "tieups",
+	"roleId" : "7"
+}

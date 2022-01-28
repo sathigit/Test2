@@ -1,0 +1,63 @@
+package com.atpl.mmg.model.report;
+
+import java.io.Serializable;
+import java.math.BigInteger;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+
+@JsonInclude(Include.NON_DEFAULT)
+public class PersonnelModel implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6519959814072124718L;
+
+	private BigInteger id;
+	private String personnelSource;
+	private String source;
+	private BigInteger personnelYear;
+	private BigInteger personnelAmount;
+
+	public BigInteger getId() {
+		return id;
+	}
+
+	public void setId(BigInteger id) {
+		this.id = id;
+	}
+
+	public String getPersonnelSource() {
+		return personnelSource;
+	}
+
+	public void setPersonnelSource(String personnelSource) {
+		this.personnelSource = personnelSource;
+	}
+
+	public String getSource() {
+		return source;
+	}
+
+	public void setSource(String source) {
+		this.source = source;
+	}
+
+	public BigInteger getPersonnelYear() {
+		return personnelYear;
+	}
+
+	public void setPersonnelYear(BigInteger personnelYear) {
+		this.personnelYear = personnelYear;
+	}
+
+	public BigInteger getPersonnelAmount() {
+		return personnelAmount;
+	}
+
+	public void setPersonnelAmount(BigInteger personnelAmount) {
+		this.personnelAmount = personnelAmount;
+	}
+
+}

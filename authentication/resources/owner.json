@@ -1,0 +1,397 @@
+{
+	"menus" : [
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-dashboard fa-2x",
+			"link" : "ownerDashboard",
+			"menuId" : "ow-db",
+			"name" : "Dashboard",
+			"selected" : "true"
+		},
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-user-plus fa-2x",
+			"menuId" : "ow-gn",
+			"name" : "General",
+			"selected" : "true",
+			"subMenus" : [
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "fa fa-truck fa-2x",
+					"menuId" : "ow-gn-vm",
+					"name" : "Vehicle Management",
+					"selected" : "true",
+					"subSubMenus" : [
+						{
+							"active" : "false",
+							"desc" : "null",
+							"icon" : "null",
+							"link" : "vehicleType",
+							"menuId" : "ow-gn-vm-vc",
+							"name" : "Vehicle Type",
+							"selected" : "true"
+						},
+						{
+							"active" : "false",
+							"desc" : "null",
+							"icon" : "null",
+							"link" : "vehicles",
+							"menuId" : "ow-gn-vm-vs",
+							"name" : "Vehicle Category",
+							"selected" : "true"
+						}
+					]
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"menuId" : "ow-gn-lm",
+					"name" : "Location Management",
+					"selected" : "true",
+					"subSubMenus" : [
+						{
+							"active" : "false",
+							"desc" : "null",
+							"icon" : "null",
+							"link" : "country",
+							"menuId" : "ow-gn-vm-cn",
+							"name" : "Country",
+							"selected" : "true"
+						},
+						{
+							"active" : "false",
+							"desc" : "null",
+							"icon" : "null",
+							"link" : "state",
+							"menuId" : "ow-gn-vm-st",
+							"name" : "State",
+							"selected" : "true"
+						},
+						{
+							"active" : "false",
+							"desc" : "null",
+							"icon" : "null",
+							"link" : "city",
+							"menuId" : "ow-gn-vm-ct",
+							"name" : "City",
+							"selected" : "true"
+						}
+					]
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "organizationalType",
+					"menuId" : "ow-gn-ot",
+					"name" : "Organizational Type",
+					"selected" : "true"
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "/bank",
+					"menuId" : "ow-gn-bk",
+					"name" : "Bank",
+					"selected" : "true"
+				}
+			]
+		},
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-building-o fa-2x",
+			"link" : "ownerFleetOperatorDashboard",
+			"menuId" : "ow-fo",
+			"name" : "Fleet Operator",
+			"selected" : "true",
+			"subMenus" : [
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "fleetDriverManagement",
+					"menuId" : "ow-fo-dm",
+					"name" : "Driver Management",
+					"selected" : "true"
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "fleetVehicleManagement",
+					"menuId" : "ow-fo-vm",
+					"name" : "Vehicle Management",
+					"selected" : "true"
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "ownerFleetTrip",
+					"menuId" : "ow-fo-gt",
+					"name" : "Trips",
+					"selected" : "true"
+				}
+			]
+		},
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-building fa-2x",
+			"link" : "ownerFranchiseDashboard",
+			"menuId" : "ow-fr",
+			"name" : "Franchise",
+			"selected" : "true",
+			"subMenus" : [
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "ownerFranchiseLabourManagement",
+					"menuId" : "ow-fr-ld",
+					"name" : "Labour Management",
+					"selected" : "true"
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "ownerFranchiseDriverManagement",
+					"menuId" : "ow-fr-dm",
+					"name" : "Driver Management",
+					"selected" : "true"
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "ownerFranchiseVehicleManagement",
+					"menuId" : "ow-fr-vm",
+					"name" : "Vehicle Management",
+					"selected" : "true"
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "ownerFranchiseTrip",
+					"menuId" : "ow-fr-gt",
+					"name" : "Trips",
+					"selected" : "true"
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "ownerFranchiseFrequentCustomer",
+					"menuId" : "ow-fr-fd",
+					"name" : "Frequent Customer",
+					"selected" : "true"
+				}
+			]
+		},
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-link fa-2x",
+			"link" : "ownerTieupsDashboard",
+			"menuId" : "ow-ti",
+			"name" : "Tieups",
+			"selected" : "true",
+			"subMenus" : [
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "ownerTieupsFleet",
+					"menuId" : "ow-ti-fo",
+					"name" : "FleetOperator Management",
+					"selected" : "true"
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "ownerTieupsWarehouse",
+					"menuId" : "ow-ti-wh",
+					"name" : "Warehouse Management",
+					"selected" : "true"
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "ownerTieupsFranchise",
+					"menuId" : "ow-ti-fm",
+					"name" : "Franchise Management",
+					"selected" : "true"
+				}
+			]
+		},
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-rupee fa-2x",
+			"menuId" : "ow-ff",
+			"name" : "Finance and Forecast",
+			"selected" : "true",
+			"subMenus" : [
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "revenue",
+					"menuId" : "ow-ff-re",
+					"name" : "Revenue",
+					"selected" : "true"
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "expense",
+					"menuId" : "ow-ff-ex",
+					"name" : "Expense",
+					"selected" : "true"
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "directCost",
+					"menuId" : "ow-ff-dc",
+					"name" : "Direct Cost",
+					"selected" : "true"
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "personnel",
+					"menuId" : "ow-ff-ps",
+					"name" : "Personnel",
+					"selected" : "true"
+				}
+			]
+		},
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-money fa-2x",
+			"link" : "fareestimationCalculation",
+			"menuId" : "ow-fa",
+			"name" : "Fare and Environments",
+			"selected" : "true",
+			"subMenus" : [
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "catalog",
+					"menuId" : "ow-fa-ca",
+					"name" : "Catalog",
+					"selected" : "true"
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "vehicleFares",
+					"menuId" : "ow-fa-vf",
+					"name" : "Vehicle Fares",
+					"selected" : "true"
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "fuelFares",
+					"menuId" : "ow-fa-ff",
+					"name" : "Fuel Fares",
+					"selected" : "true"
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "taxFares",
+					"menuId" : "ow-fa-tf",
+					"name" : "Tax Fares",
+					"selected" : "true"
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "goodsFares",
+					"menuId" : "ow-fa-gf",
+					"name" : "Goods Fares",
+					"selected" : "true"
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "insuranceFares",
+					"menuId" : "ow-fa-if",
+					"name" : "Insurance Fares",
+					"selected" : "true"
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "promoFares",
+					"menuId" : "ow-fa-pf",
+					"name" : "Promo Code Fares",
+					"selected" : "true"
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "labourFares",
+					"menuId" : "ow-fa-lf",
+					"name" : "Labours Fares",
+					"selected" : "true"
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "cancellationFares",
+					"menuId" : "ow-fa-cf",
+					"name" : "Cancellation Fares",
+					"selected" : "true"
+				}
+			]
+		},
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-user fa-2x",
+			"menuId" : "ow-ad",
+			"name" : "Admin",
+			"selected" : "true",
+			"subMenus" : [
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "admin",
+					"menuId" : "ow-ad-if",
+					"name" : "Admin Information",
+					"selected" : "true"
+				}
+			]
+		}
+	],
+	"name" : "owner",
+	"roleId" : "5"
+}

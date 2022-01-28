@@ -1,0 +1,33 @@
+{
+	"menus" : [
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-dashboard fa-2x",
+			"link" : "warehouseDashboard",
+			"menuId" : "wh-db",
+			"name" : "Dashboard",
+			"selected" : "true"
+		},
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-address-card fa-2x",
+			"link" : "addTripDetails",
+			"menuId" : "wh-td",
+			"name" : "Add Trip Details",
+			"selected" : "true"
+		},
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-star-half-o fa-2x",
+			"link" : "viewTripDetails",
+			"menuId" : "wh-vt",
+			"name" : "View Trip Details",
+			"selected" : "true"
+		}
+	],
+	"name" : "warehouse",
+	"roleId" : "4"
+}

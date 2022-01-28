@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Customer Quotation</title>
+<style type="text/css">
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+body, table, td, a {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+footer {
+	color: #777777;
+	width: 100%;
+	height: 30px;
+	position: absolute;
+	bottom: 0;
+	border-top: 1px solid #AAAAAA;
+	padding: 8px 0;
+	text-align: center;
+	padding: 20px;
+}
+
+a {
+	color: #0087C3;
+	text-decoration: none;
+}
+
+body {
+	margin: 0 auto;
+	color: #555555;
+	background: #FFFFFF;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	font-family: SourceSansPro;
+	align: center;
+}
+
+header {
+	padding: 10px 0;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #AAAAAA;
+}
+
+#company {
+	float: right;
+	text-align: right;
+}
+
+#details {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#client {
+	padding-left: 6px;
+	border-left: 6px solid #d91b65;
+	float: left;
+}
+
+#client .to {
+	color: #777777;
+}
+
+h2.name {
+	font-size: 1.4em;
+	font-weight: normal;
+	margin: 0;
+}
+
+#invoice {
+	float: right;
+	text-align: right;
+	margin-top: 10px;
+}
+
+#invoice h6 {
+	color: #0087C3;
+	font-size: 1em;
+	line-height: 1em;
+	font-weight: normal;
+	margin: 0 0 10px 0;
+}
+
+#invoice .date {
+	font-size: 1.1em;
+	color: #777777;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+
+table th, table td {
+	padding: 10px;
+	background: white; !
+	important text-align: center;
+	border-bottom: 1px solid #FFFFFF;
+}
+
+table th {
+	white-space: nowrap;
+	font-weight: normal;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+table td {
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+table td h3 {
+	color: #FFFFFF;
+	font-size: 1em;
+	font-weight: normal;
+	margin: 0 0 0.2em 0;
+}
+
+table .no {
+	color: #FFFFFF;
+	font-size: 1em;
+	background: #d91b65;
+}
+
+table .desc {
+	text-align: center;
+	font-size: 1em;
+}
+
+table .unit {
+	background: #DDDDDD;
+	font-size: 1em;
+}
+
+table .qty {
+	font-size: 1em;
+}
+
+table .total {
+	background: #57B223;
+	color: #FFFFFF;
+	font-size: 1.2em;
+	padding-top: 10px;
+}
+
+table td.unit, table td.qty, table td.total {
+	font-size: 1em;
+	padding-top: 5px;
+}
+
+table tbody tr:last-child td {
+	border: none;
+}
+
+table tfoot td {
+	padding: 5px 5px;
+	background: #FFFFFF;
+	border-bottom: none;
+	font-size: 1em;
+	white-space: nowrap;
+}
+
+table tfoot tr:first-child td {
+	border-top: none;
+	padding: 10px 20px;
+	white-space: nowrap;
+}
+
+table tfoot tr:last-child td {
+	color: #0087C3;
+	font-size: 1.4em;
+}
+
+table tfoot tr td:first-child {
+	border: none;
+	white-space: nowrap;
+}
+
+#thanks {
+	font-size: 1.5em;
+	margin-bottom: 10px;
+}
+
+#notices {
+	padding-left: 6px;
+	border-left: 6px solid #d91b65;
+	margin-top: 10px;
+}
+
+#notices .notice {
+	font-size: 1.2em;
+}
+
+//
+second
+
+    * {
+	box-sizing: border-box;
+}
+
+.header {
+	overflow: hidden;
+	background-color: #ffffff;
+	padding: 20px;
+}
+
+.header a {
+	float: left;
+	color: black;
+	text-align: center;
+	padding: 12px;
+	padding-bottom: 1px;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 25px;
+	border-radius: 4px;
+}
+
+.header a.logo {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.header a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.responsive-table {
+	width: 100% !important;
+}
+
+.header-right {
+	float: right;
+	padding-top: 40px;
+	color: #d91b65;
+}
+
+img {
+	border: 0;
+	height: auto;
+	line-height: 100%;
+	outline: none;
+	text-decoration: none;
+}
+
+table {
+	border-collapse: collapse !important;
+}
+
+body {
+	height: 100% !important;
+	margin: 0 !important;
+	padding: 2px !important;
+	width: 100% !important;
+	align: center;
+	!
+	important
+}
+
+.content {
+	max-width: 800px;
+	margin: auto;
+	background: white;
+}
+
+/* iOS BLUE LINKS */
+a[x-apple-data-detectors] {
+	color: inherit !important;
+	text-decoration: none !important;
+	font-size: inherit !important;
+	font-family: inherit !important;
+	font-weight: inherit !important;
+	line-height: inherit !important;
+}
+
+@media only screen and (max-width: 480px) {
+	body {
+		display: block !important;
+		margin-bottom: 40px;
+		align: center;
+	}
+	main {
+		display: block !important;
+		margin-bottom: 40px;
+		padding-left: 5px !important;
+		align: center;
+	}
+}
+
+/* MOBILE STYLES */
+@media screen and (max-width: 525px) {
+	/* ALLOWS FOR FLUID TABLES */
+	.mobile-wrapper {
+		/* width: 100% !important;
+                max-width: 100% !important; */
+		
+	}
+	.wrapper {
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+
+	/* ADJUSTS LAYOUT OF LOGO IMAGE */
+	.logo img {
+		margin: 0 auto !important;
+	}
+
+	/* USE THESE CLASSES TO HIDE CONTENT ON MOBILE */
+	.mobile-hide {
+		display: none !important;
+	}
+	.img-max {
+		max-width: 100% !important;
+		width: 100% !important;
+		height: auto !important;
+	}
+
+	/* FULL-WIDTH TABLES */
+	.responsive-table {
+		width: 100% !important;
+	}
+	.content {
+		width: 100% !important;
+	}
+
+	/* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+	.padding {
+		padding: 10px 5% 5px 5% !important;
+	}
+	.padding-meta {
+		padding: 30px 5% 0px 5% !important;
+		text-align: center;
+	}
+	.padding-copy {
+		padding: 10px 5% 10px 5% !important;
+		text-align: left;
+	}
+	.no-padding {
+		padding: 0 !important;
+	}
+	.section-padding {
+		padding: 50px 15px 50px 15px !important;
+	}
+
+	/* ADJUST BUTTONS ON MOBILE */
+	.mobile-button-container {
+		margin: 0 auto;
+		width: 100% !important;
+	}
+	.mobile-button {
+		padding: 15px !important;
+		border: 0 !important;
+		font-size: 16px !important;
+		display: block !important;
+	}
+}
+
+/* ANDROID CENTER FIX */
+div[style*="margin: 16px 0;"] {
+	margin: 0 !important;
+}
+</style>
+</head>
+
+<body>
+	<div class="content mobile-wrapper">
+
+		<table border="0" cellpadding="0" cellspacing="0" width="100%"
+			style="max-width: 800px;" class="content">
+
+			<tbody>
+				<tr>
+					<td style="background: none">
+						<div class="header">
+							<a href="#default" class="logo"><img
+								src="https://common-mmg.s3.ap-south-1.amazonaws.com/MMG+LOGO+NEW.png"
+								width="100xpx" height="100" /></a>
+						</div>
+					</td>
+					<td style="background: none">
+						<div class="header-right ">
+							<h1>
+								<b>QUOTATION</b>
+							</h1>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+
+		<hr />
+
+		<main>
+			<table border="0" cellpadding="0" cellspacing="0" width="100%"
+				style="max-width: 800px; align: center">
+
+				<tbody>
+					<tr>
+						<td>
+							<div
+								style="padding-left: 6px; border-left: 6px solid #d91b65; float: left; text-align: left">
+								<div class="to">QUOTATION TO:</div>
+								<h2 class="name">
+									<b><span data-th-text="${customerName}"></span> </b>
+								</h2>
+								<div class="address"><span data-th-text="${source}"></span></div>
+								<div><span data-th-text="${contactNumber}"></span></div>
+								<div class="email">
+									<a href="${emailId}"><span data-th-text="${emailId}"></span></a>
+								</div>
+							</div>
+						</td>
+						<td style="background: none; text-align: none">
+							<div id="details" class="clearfix">
+								<div id="company">
+
+									<h2 class="name">
+										<b>Arohaka Technologies India Pvt ltd </b>
+									</h2>
+									<div>#36, JCST Layout, M-Block</div>
+									<div>Kuvempunagara, Mysore 570023</div>
+									<div>Phone: +91 901 902 903 6</div>
+									<div>
+										<b>GST : 29AAPCA9461K1ZV</b>
+									</div>
+									<div>
+										<a href="mailto:info@arohaka.com">info@arohaka.com</a>
+									</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td style="background: none; text-align: left">
+							<div id="client">
+								<h2 class="name">SHIPPING To:</h2>
+								<div class="to"><span data-th-text="${destination}"></span></div>
+								<div class="to"><span data-th-text="${contactNumber}"></span></div>
+							</div>
+						</td>
+						<td style="background: none; text-align: none">
+							<div id="details" class="clearfix">
+								<div id="invoice">
+									<h6>
+										QUOTATION NO:<span></span>
+									</h6>
+									<div class="date">DATE: <span data-th-text="${pickupDate}"></span></div>
+									<div class="date">VALID UNTIL: <span data-th-text="${pickupDate}"></span></div>
+								</div>
+							</div>
+						</td>
+
+
+
+					</tr>
+				</tbody>
+			</table>
+
+
+
+
+			<table border="0" cellpadding="5" cellspacing="0" width="100%"
+				style="max-width: 800px; align: center">
+				<thead>
+					<tr>
+						<th class="no">Description</th>
+						<th style="background: #EEEEEE;" class="desc">QTY(Tonnes)</th>
+						<th style="background: #EEEEEE;" class="qty">Amount</th>
+
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="no"><span data-th-text="${goodsType}"></span></td>
+						<td style="background: #EEEEEE;" class="desc"><span data-th-text="${goodsWeight}"></span></td>
+						<td style="background: #EEEEEE;" class="qty"><span data-th-text="${totalAmount}"></span></td>
+
+					</tr>
+
+				</tbody>
+				<tfoot>
+
+
+					<tr style="padding-top: 10px">
+						<td colspan="2">GST</td>
+						<td>0.00</td>
+					</tr>
+					<tr style="padding-top: 10px">
+						<td style="border-top: 1px solid #AAAAAA;" colspan="2">TOTAL</td>
+						<td style="border-top: 1px solid #AAAAAA;"><span data-th-text="${totalAmount}"></span></td>
+					</tr>
+				</tfoot>
+			</table>
+			<div id="thanks">Thank You for your business!</div>
+			<div id="notices">
+				<div>NOTICE:</div>
+				<div class="to" align="justify;">This quotation is not a
+					contract or a bill. It is our best guess at the total price for the
+					service and goods described above. The customer will be billed
+					after indicating acceptance of this quote. Payment will be due
+					prior to the delivery of service and goods. Please fax or mail the
+					signed quote to the address listed Above.</div>
+			</div>
+			<p class="notices" style="">Customer acceptance</p>
+			<table border="0" cellpadding="0" cellspacing="0" width="100%"
+				style="max-width: 800px; align: center">
+				<thead>
+					<tr>
+						<th style="background: none">Signature</th>
+						<th style="background: none">Printed Name</th>
+						<th style="background: none">Date</th>
+
+
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td style="background: none"></td>
+						<td style="background: none"></td>
+						<td style="background: none"></td>
+
+
+					</tr>
+
+				</tbody>
+			</table>
+			<table border="0" cellpadding="0" cellspacing="0" width="100%"
+				style="max-width: 800px; align: center">
+
+				<tbody>
+					<tr>
+						<td style="background: none">
+							<div style="padding-top: 500px;">
+
+								<p align="center">If you have any questions, please contact
+									[MMG Marketing and Customer Support, 6366364364,
+									info@arohaka.com]</p>
+							</div>
+						</td>
+
+
+
+					</tr>
+
+				</tbody>
+			</table>
+
+			<br /> <br /> <br /> <br /> <br /> 
+
+			<table border="0" cellpadding="0" cellspacing="0" width="100%"
+				style="max-width: 800px;" class="content">
+
+				<tbody>
+					<tr>
+						<td>
+							<div class="header">
+								<a href="#default" class="logo"><img
+									src="https://common-mmg.s3.ap-south-1.amazonaws.com/MMG+LOGO+NEW.png"
+									width="100xpx" height="100" /></a>
+							</div>
+						</td>
+						<td>
+							<div class="header-right ">
+								<h1>
+									<b>QUOTATION</b>
+								</h1>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<hr />
+			<h3>
+				<b>Note:</b>
+			</h3>
+			<div>
+				<p></p>
+			</div>
+			<div>Thank you for giving us an apportunity to utilize our
+				service,</div>
+			<div>
+				<p></p>
+			</div>
+			<div>At the outset, we thank you for the enquire and our terms
+				and conditions , please find the above price quotation for your
+				review and reference.</div>
+
+			<div>
+				<p></p>
+			</div>
+			<div>
+				<p></p>
+			</div>
+			<h3>Terms and Conditions</h3>
+			<div>
+				<p></p>
+			</div>
+			<div align="justify;">1. Type of booking: Paid and To Pay.</div>
+			<div>
+				<p></p>
+			</div>
+			<div align="justify;">2. Diesel Hike Charges: If the diesel
+				price increases during the contract period, then the basic rates
+				will be increased immediately as per mutual agreement.</div>
+			<div>
+				<p></p>
+			</div>
+			<div align="justify;">3. Price is exclusive of GSTIN.</div>
+			<div>
+				<p></p>
+			</div>
+			<div align="justify;">4. Check post penalties, if any due to
+				consignment issue is in your scope.</div>
+			<div>
+				<p></p>
+			</div>
+			<div align="justify;">5. This Contract is subject to "Force
+				Majeure" Conditions.</div>
+			<div>
+				<p></p>
+			</div>
+			<div align="justify;">6. Contract is subject Jurisdiction-
+				Mysore.</div>
+			<div>
+				<p></p>
+			</div>
+			<div align="justify;">7. Goods are Booked on "Said to Contain
+				Basis" no open delivery will be given if the consignment is intact
+				condition.</div>
+			<div>
+				<p></p>
+			</div>
+			<div align="justify;">8. The consignor needs to insure (Transit
+				insurance) the material without which in case of damage/Accident the
+				company would not entertain any claims.</div>
+			<div>
+				<p></p>
+			</div>
+			<div align="justify;">9. Only non-hazardous materials
+				transportation would be undertaken.</div>
+			<div>
+				<p></p>
+			</div>
+			<div align="justify;">10. The freight charges are purely the
+				transportation charges and exclude the Goods Tax, State Tax,Excise
+				Duty, Octroi and other statutory levies which are the responsibility
+				of the CONSIGNOR or CONSIGNEE to pay.</div>
+			<div>
+				<p></p>
+			</div>
+			<div align="justify;">11. If Halting Charges Will be applicable
+				as a small vechicle ?.500/- per day, big Vehicle ?.1000/- per day.</div>
+			<div>
+				<p></p>
+			</div>
+			<div>
+				<p></p>
+			</div>
+			<div>
+				<p></p>
+			</div>
+
+			<div>
+
+				<table border="0" cellpadding="0" cellspacing="0" width="100%"
+					style="max-width: 800px; align: center">
+
+					<tbody>
+						<tr>
+							<td style="background: none">
+								<div style="padding-top: 500px;">
+
+									<p align="center">If you have any questions, please contact
+										[MMG Marketing and Customer Support, 6366364364,
+										info@arohaka.com]</p>
+								</div>
+							</td>
+						</tr>
+
+					</tbody>
+				</table>
+
+			</div>
+		</main>
+	</div>
+
+</body>
+
+</html>

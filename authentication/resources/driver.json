@@ -1,0 +1,42 @@
+{
+	"menus" : [
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-dashboard fa-2x",
+			"link" : "driverDashboard",
+			"menuId" : "dr-db",
+			"name" : "Dashboard",
+			"selected" : "true"
+		},
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-address-card fa-2x",
+			"link" : "driverMyTrips",
+			"menuId" : "dr-mt",
+			"name" : "My Trip",
+			"selected" : "true"
+		},
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-star-half-o fa-2x",
+			"link" : "rating",
+			"menuId" : "dr-rt",
+			"name" : "Ratings",
+			"selected" : "true"
+		},
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-question-circle fa-2x",
+			"link" : "/helpLine",
+			"menuId" : "ow-db",
+			"name" : "Help Line",
+			"selected" : "true"
+		}
+	],
+	"name" : "driver",
+	"roleId" : "2"
+}

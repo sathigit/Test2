@@ -1,0 +1,80 @@
+{
+	"menus" : [
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-dashboard fa-2x",
+			"link" : "fleetOperatorDashboard",
+			"menuId" : "fr-db",
+			"name" : "Dashboard",
+			"selected" : "true"
+		},
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-user-plus fa-2x",
+			"link" : "fleetOperatorBookingList",
+			"menuId" : "fr-bk",
+			"name" : "Bookings",
+			"selected" : "true"
+		},
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-user-plus fa-2x",
+			"menuId" : "fr-di",
+			"name" : "Driver",
+			"selected" : "true",
+			"subMenus" : [
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "fleetOperatorDriverRegistration",
+					"menuId" : "fr-di-dr",
+					"name" : "Registration",
+					"selected" : "true"
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "fleetOperatorDriverList",
+					"menuId" : "fr-di-dl",
+					"name" : "List",
+					"selected" : "true"
+				}
+			]
+		},
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-user-plus fa-2x",
+			"menuId" : "fr-lb",
+			"name" : "Vechicle",
+			"selected" : "true",
+			"subMenus" : [
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "fleetOperatorVehicleRegistration",
+					"menuId" : "fr-lb-lr",
+					"name" : "Registration",
+					"selected" : "true"
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "fleetOperatorVehicleList",
+					"menuId" : "fr-lb-ll",
+					"name" : "List",
+					"selected" : "true"
+				}
+			]
+		}
+	],
+	"name" : "fleetOperator",
+	"roleId" : "3"
+}

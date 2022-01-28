@@ -1,0 +1,136 @@
+{
+	"menus" : [
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-dashboard fa-2x",
+			"link" : "franchiseDashboard",
+			"menuId" : "fr-db",
+			"name" : "Dashboard",
+			"selected" : "true"
+		},
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-address-card fa-2x",
+			"link" : "franchiseBookingList",
+			"menuId" : "fr-bk",
+			"name" : "Bookings",
+			"selected" : "true"
+		},
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-user-secret fa-2x",
+			"menuId" : "fr-di",
+			"name" : "Driver",
+			"selected" : "true",
+			"subMenus" : [
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "franchiseDriverRegistration",
+					"menuId" : "fr-di-dr",
+					"name" : "Registration",
+					"selected" : "true"
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "franchiseDriverList",
+					"menuId" : "fr-di-dl",
+					"name" : "List",
+					"selected" : "true"
+				}
+			]
+		},
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-male fa-2x",
+			"menuId" : "fr-lb",
+			"name" : "Labour",
+			"selected" : "true",
+			"subMenus" : [
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "franchiseLabourRegistration",
+					"menuId" : "fr-lb-lr",
+					"name" : "Registration",
+					"selected" : "true"
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "/franchiseLabourList",
+					"menuId" : "fr-lb-ll",
+					"name" : "List",
+					"selected" : "true"
+				}
+			]
+		},
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-bus fa-2x",
+			"menuId" : "fr-vh",
+			"name" : "Vechicle",
+			"selected" : "true",
+			"subMenus" : [
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "franchiseVehicleRegistration",
+					"menuId" : "fr-vh-vr",
+					"name" : "Registration",
+					"selected" : "true"
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "franchiseVehicleList",
+					"menuId" : "fr-vh-vl",
+					"name" : "List",
+					"selected" : "true"
+				}
+			]
+		},
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-users fa-2x",
+			"menuId" : "fr-fc",
+			"name" : "Frequent Customer",
+			"selected" : "true",
+			"subMenus" : [
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "franchiseCustomerRegistration",
+					"menuId" : "fr-fc-cr",
+					"name" : "Registration",
+					"selected" : "true"
+				},
+				{
+					"active" : "false",
+					"desc" : "null",
+					"icon" : "null",
+					"link" : "franchiseFrequentCustomerList",
+					"menuId" : "fr-fc-cl",
+					"name" : "List",
+					"selected" : "true"
+				}
+			]
+		}
+	],
+	"name" : "franchies",
+	"roleId" : "9"
+}

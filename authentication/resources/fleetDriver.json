@@ -1,0 +1,42 @@
+{
+	"menus" : [
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-dashboard fa-2x",
+			"link" : "fleetOperatorDriverDashboard",
+			"menuId" : "fodr-db",
+			"name" : "Dashboard",
+			"selected" : "true"
+		},
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-user-plus fa-2x",
+			"link" : "fleetOperatorDriverMyTrips",
+			"menuId" : "fodr-mt",
+			"name" : "My Trip",
+			"selected" : "true"
+		},
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-user-plus fa-2x",
+			"link" : "rating",
+			"menuId" : "fodr-rt",
+			"name" : "Ratings",
+			"selected" : "true"
+		},
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-user-plus fa-2x",
+			"link" : "helpLine",
+			"menuId" : "fodr-hc",
+			"name" : "Help Line",
+			"selected" : "true"
+		}
+	],
+	"name" : "fleetDriver",
+	"roleId" : "11"
+}

@@ -1,0 +1,42 @@
+{
+	"menus" : [
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-user-plus",
+			"link" : "bookNow",
+			"menuId" : "0",
+			"name" : "Book Now",
+			"selected" : "true"
+		},
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-user-plus",
+			"link" : "customerMyTrip",
+			"menuId" : "1",
+			"name" : "My Trip",
+			"selected" : "true"
+		},
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-user-plus",
+			"link" : "priceChart",
+			"menuId" : "2",
+			"name" : "Price Chart",
+			"selected" : "true"
+		},
+		{
+			"active" : "false",
+			"desc" : "null",
+			"icon" : "fa fa-user-plus",
+			"link" : "helpLine",
+			"menuId" : "4",
+			"name" : "Help Line",
+			"selected" : "true"
+		}
+	],
+	"name" : "Customer",
+	"roleId" : "1"
+}

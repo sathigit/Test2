@@ -1,0 +1,16 @@
+MMG:
+  headerApiKey: MMGATPL
+  imagePath: /home/ubuntu/mmgui_latest/src/images
+  apiSessionTime: 30
+  fromMail: mmgatpl@gmail.com
+  enquiryMail: info@arohaka.com, hr@arohaka.com 
+  tieupsUrl:https://www.movemygoods.in:8088/mmg/api/v1
+  tieupsHeaderApiKey: MMGATPL
+  driverHeaderApiKey: MMGATPL
+  driverUrl: https://www.movemygoods.in:8086/mmg/api/v1
+  fleetHeaderApiKey: MMGATPL
+  fleetUrl:https://www.movemygoods.in:8089/mmg/api/v1
+  authHeaderApiKey: MMGATPL
+  authUrl:https://www.movemygoods.in:8083/mmg/api/v1
+  accessKey: AKIAXEQC6LDVS6SYRWCT
+  secretKey: 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
